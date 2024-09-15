@@ -25,10 +25,10 @@ FILE_LICENCE ( GPL2_ONLY )
 .equ	SYSSEG, 0x1000			/* system loaded at SYSSEG<<4 */
 
 	.org	0
+	.code16
 	.arch i386
 	.text
 	.section ".prefix", "ax", @progbits
-	.code16
 	.globl	_dsk_start
 _dsk_start:
 
