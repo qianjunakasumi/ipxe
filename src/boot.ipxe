@@ -1,7 +1,7 @@
 #!ipxe
-# Edited at 09/15/2024 qianjunakasumi. Approved
+# Edited at 09/27/2024 qianjunakasumi. Approved
 
-echo TACHIBANA iPXE of LYA (09/15/2024 x86_64)
+echo TACHIBANA iPXE of LYA (09/27/2024 x86_64)
 
 :retry_dhcp
 dhcp || goto retry_dhcp
@@ -9,6 +9,6 @@ dhcp || goto retry_dhcp
 echo DHCP succeeded
 echo Launching next level...
 
-set matchbox-url http://matchbox.lya.tachi:8080
+set matchbox-url http://matchbox.tachi:8080
 
 chain ${matchbox-url}/assets/ipxe/level/tachibana.ipxe
