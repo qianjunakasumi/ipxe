@@ -69,7 +69,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #undef	SANBOOT_PROTO_AOE	/* AoE protocol */
 #undef	SANBOOT_PROTO_IB_SRP	/* Infiniband SCSI RDMA protocol */
 #undef	SANBOOT_PROTO_FCP	/* Fibre Channel protocol */
-#undef	SANBOOT_PROTO_HTTP	/* HTTP SAN protocol */
+//#undef	SANBOOT_PROTO_HTTP	/* HTTP SAN protocol */
 
 /*
  * HTTP extensions
@@ -131,7 +131,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define	ROUTE_CMD		/* Routing table management commands */
 #define IMAGE_CMD		/* Image management commands */
 #define DHCP_CMD		/* DHCP management commands */
-//#define SANBOOT_CMD		/* SAN boot commands */
+#define SANBOOT_CMD		/* SAN boot commands */
 #define MENU_CMD		/* Menu commands */
 //#define LOGIN_CMD		/* Login command */
 #define SYNC_CMD		/* Sync command */
